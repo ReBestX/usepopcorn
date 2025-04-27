@@ -1,6 +1,6 @@
 # USEPOPCORN
 
-*Elevate your video experience, effortlessly and intuitively.*
+*manage your movie collection, effortlessly and intuitively.*
 
   ![Last Commit](https://img.shields.io/github/last-commit/ReBestX/usepopcorn?style=flat&logo=git&logoColor=white&color=0080ff)
   ![Top Language](https://img.shields.io/github/languages/top/ReBestX/usepopcorn?style=flat&color=0080ff)
