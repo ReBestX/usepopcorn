@@ -1,0 +1,61 @@
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 3rem;
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, var(--color-primary) 94%, #0000)
+      top/9px 9px no-repeat,
+    conic-gradient(#0000 30%, var(--color-primary));
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+  animation: spinner-animation 1s infinite linear;
+}
+
+.loader-text {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  letter-spacing: 1px;
+}
+
+@keyframes spinner-animation {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* Custom Scrollbar Styles */
+/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-background-900);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-primary-light);
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) var(--color-background-900);
+}

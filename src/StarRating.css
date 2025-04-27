@@ -1,0 +1,27 @@
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.star {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #e5e5e5;
+  transition: color 0.2s ease-in-out;
+}
+
+.star:hover,
+.star.hover {
+  color: #fcc419;
+}
+
+.star.selected {
+  color: #fcc419;
+}
+
+.rating-value {
+  margin-left: 8px;
+  font-size: 2rem;
+  font-weight: bold;
+}
